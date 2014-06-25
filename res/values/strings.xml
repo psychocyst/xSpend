@@ -4,5 +4,15 @@
     <string name="app_name">x$pend</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Closed</string>    
+    <string name="my_red">#CC0000</string>
+    <string name="my_green">#00CC00</string>
+    <string name="my_grey">#0C0C0C</string>
+    <string name="menu_add">Add</string>
+    <string name="menu_add_tab">Add Tab</string>
+    <string name="menu_add_exp">Add Expense</string>
+    <string name="menu_schedule">Schedule Task</string>
+    <string name="menu_calender">Calender</string>
 
 </resources>

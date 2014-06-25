@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ListView
+        android:id="@+id/listView_recent_records"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tableRow_total"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+    
+    <TableRow
+        android:id="@+id/tableRow_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" >
+
+        <TextView
+            android:id="@+id/textView_total_label"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:background="?android:attr/activatedBackgroundIndicator"
+            android:gravity="left"
+            android:minHeight="?android:attr/listPreferredItemHeightSmall"
+            android:paddingLeft="16dip"
+            android:paddingRight="8dip"
+            android:text="TOTAL"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/textView_total_amount"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:background="?android:attr/activatedBackgroundIndicator"
+            android:gravity="right"
+            android:minHeight="?android:attr/listPreferredItemHeightSmall"
+            android:paddingLeft="8dip"
+            android:paddingRight="16dip"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000" />
+    </TableRow>
+
+</RelativeLayout>

@@ -4,6 +4,42 @@
         android:id="@+id/action_settings"
         android:orderInCategory="100"
         android:showAsAction="never"
-        android:title="@string/action_settings"/>
+        android:title="@string/action_settings" >
+    </item>
+    
+    <item 
+        android:id="@+id/Add"
+		android:icon="@drawable/add"
+		android:title="@string/menu_add"
+		android:showAsAction="always" >
+        <menu>
+            <item 
+                android:id="@+id/Add_Tab"
+				android:icon="@drawable/add_tab"
+				android:title="@string/menu_add_tab"
+				android:showAsAction="always" >
+			</item>
+            <item 
+                android:id="@+id/Add_Exp"
+                android:icon="@drawable/add_exp"
+                android:title="@string/menu_add_exp"
+                android:showAsAction="always" >
+            </item>
+        </menu>
+    </item>
+    
+    <item 
+        android:id="@+id/Schedule_Task"
+		android:icon="@drawable/schedule"
+		android:title="@string/menu_schedule"
+		android:showAsAction="always" >
+	</item>
+	
+    <item 
+        android:id="@+id/Calender"
+		android:icon="@drawable/calender"
+		android:title="@string/menu_calender"
+		android:showAsAction="always" >
+	</item>
 
 </menu>

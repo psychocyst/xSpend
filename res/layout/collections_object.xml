@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TableRow
+        android:id="@+id/collection_object_tableRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" >
+        
+        <TextView
+	        android:id="@+id/collection_object_textView_record_name"
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.6"
+	        android:textAppearance="?android:attr/textAppearanceLarge"
+	        android:gravity="left"
+	        android:paddingLeft="16dip"
+		    android:paddingRight="8dip"
+		    android:textColor="#000"
+		    android:background="?android:attr/activatedBackgroundIndicator"
+		    android:minHeight="?android:attr/listPreferredItemHeightSmall" />
+
+	    <TextView
+	        android:id="@+id/collection_object_textView_record_total"
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.4"
+	        android:textAppearance="?android:attr/textAppearanceLarge"
+	        android:gravity="right"
+	        android:paddingLeft="8dip"
+	 		android:paddingRight="16dip"
+	 	   	android:textColor="#000"
+	 	   	android:background="?android:attr/activatedBackgroundIndicator"
+ 		   	android:minHeight="?android:attr/listPreferredItemHeightSmall" />
+	
+	</TableRow>
+        
+    <ListView
+        android:id="@+id/collection_object_listView_recent_records"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/collection_object_tableRow"
+        android:layout_centerHorizontal="true" >
+    </ListView>
+
+</RelativeLayout>

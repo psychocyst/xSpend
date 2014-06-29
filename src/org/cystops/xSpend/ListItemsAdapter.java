@@ -17,9 +17,9 @@ public class ListItemsAdapter extends BaseAdapter {
 	private Context context;
 	
 	public ListItemsAdapter (Context context, ArrayList<ArrayList<Object>> arrayList) {
-		arrayList = arrayList;
-		layoutInflater = LayoutInflater.from(context);
+		this.arrayList = arrayList;
 		this.context = context;
+		layoutInflater = LayoutInflater.from(context);
 	}
 	
 	public String getItemLabel(int position) {
@@ -52,7 +52,7 @@ public class ListItemsAdapter extends BaseAdapter {
 			convertView = layoutInflater.inflate(R.layout.holder_list_item, null);
 			viewHolder = new ViewHolder();
 			viewHolder.textViewLabel = (TextView) convertView.findViewById(R.id.textView_list_item_label);
-			viewHolder.textViewAmount = (TextView) convertView.findViewById(R.id.textView_total_amount);
+			viewHolder.textViewAmount = (TextView) convertView.findViewById(R.id.textView_list_item_amount);
 			
 			convertView.setTag(viewHolder);
 		} else {

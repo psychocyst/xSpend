@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+	<android.support.v4.view.ViewPager
+	    android:id="@+id/collection_viewPager"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_above="@+id/collection_tableRow_amount" >
+
+	    <android.support.v4.view.PagerTitleStrip 
+	        android:id="@+id/collection_pagerTitleStrip"
+    	    android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_gravity="top"
+        	android:background="#33b5e5"
+        	android:textColor="#fff"
+        	android:paddingTop="4dp"
+        	android:paddingBottom="4dp" />
+
+	</android.support.v4.view.ViewPager>
+
+	<TableRow
+	    android:id="@+id/collection_tableRow_button"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_centerHorizontal="true"
+	    android:layout_margin="4dip"
+        android:weightSum="1.0"
+        android:gravity="center" >
+
+	    <Button
+	        android:id="@+id/collection_button_add_record"
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.5"
+	        android:gravity="center_vertical"
+	        android:text="@string/collection_button_add_record"
+	        style="@android:attr/buttonBarStyle" />
+
+	    <Button
+	        android:id="@+id/collection_button_reset_input"
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.5"
+	        android:gravity="center_vertical"
+	        android:text="@string/collection_button_reset_input"
+	        style="@android:attr/buttonBarButtonStyle" />
+
+	</TableRow>
+
+	<TableRow
+	    android:id="@+id/collection_tableRow_note"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/collection_tableRow_button"
+	    android:layout_centerHorizontal="true"
+	    android:layout_margin="4dip"
+        android:weightSum="1.0"
+        android:gravity="center" >
+
+		<TextView
+		    android:id="@+id/collection_textView_note_label"
+		    android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.4"
+	        android:gravity="center_vertical"
+		    android:text="@string/collection_textView_note_label"
+		    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		<EditText
+		    android:id="@+id/collection_editText_note"
+		    android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.6"
+	        android:gravity="center_vertical"
+	        android:inputType="text"
+	        android:hint="@string/collection_editText_note" >
+		</EditText>
+
+	</TableRow>
+
+	<TableRow
+	    android:id="@+id/collection_tableRow_amount"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/collection_tableRow_note"
+	    android:layout_centerHorizontal="true"
+	    android:layout_margin="4dip"
+        android:weightSum="1.0"
+        android:gravity="center" >
+
+		<TextView
+		    android:id="@+id/collection_textView_amount_label"
+		    android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.4"
+	        android:gravity="center_vertical"
+		    android:text="@string/collection_textView_amount_label"
+		    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		<EditText
+		    android:id="@+id/collection_editText_amount"
+		    android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.6"
+	        android:gravity="center_vertical"
+	        android:inputType="numberSigned"
+	        android:hint="@string/collection_editText_amount" />
+
+	</TableRow>
+
+</RelativeLayout>

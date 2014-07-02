@@ -324,7 +324,7 @@ public class HomeScreen extends FragmentActivity implements ActionBar.TabListene
 	
 	@Override
 	public boolean onOptionsItemSelected (final MenuItem menuItem){
-		if(menuItem.getItemId() == R.id.Add_Tab|menuItem.getItemId() == R.id.Add_Exp) {
+		if(menuItem.getItemId() == R.id.homescreen_menuitem_add_tabs|menuItem.getItemId() == R.id.homescreen_menuitem_add_expenses) {
 			AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(context);
 			alertDialogBuilder.setTitle("Add New Record");
 			alertDialogBuilder.setMessage("Record Name");
@@ -342,12 +342,12 @@ public class HomeScreen extends FragmentActivity implements ActionBar.TabListene
 							showTableNameAlert();
 						} else {
 							//TODO change menu item names
-							if(menuItem.getItemId() == R.id.Add_Tab) {
+							if(menuItem.getItemId() == R.id.homescreen_menuitem_add_tabs) {
 								recordName = "tabs_"+recordName;
 								Ledger ledger = new Ledger(context, recordName, "tabs");
 								ledger.closeDB();
 								summationTabs.addRecord(recordName);
-							} else if(menuItem.getItemId() == R.id.Add_Exp){
+							} else if(menuItem.getItemId() == R.id.homescreen_menuitem_add_expenses){
 								recordName = "expenses_"+recordName;
 								Ledger ledger = new Ledger(context, recordName, "expenses");
 								ledger.closeDB();
@@ -369,8 +369,7 @@ public class HomeScreen extends FragmentActivity implements ActionBar.TabListene
 	}
     
     protected void showTableNameAlert() {
-		// TODO check if modification is required
-    	AlertDialog.Builder builder = new AlertDialog.Builder(context);
+		AlertDialog.Builder builder = new AlertDialog.Builder(context);
     	builder.setTitle("enter a valid tab name");
 		builder.setMessage("tab's name cannot be empty, contain spaces or special characters")
 		       .setCancelable(false)

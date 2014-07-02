@@ -196,7 +196,6 @@ public class CollectionsActivity extends FragmentActivity implements OnClickList
     	
 		@Override
         public String getPageTitle(int position) {
-			//TODO   
 			return listItemsAdapter.getItemLabel(position).replaceFirst("[a-zA-Z0-9]*_", "");
         }
 
@@ -236,8 +235,6 @@ public class CollectionsActivity extends FragmentActivity implements OnClickList
         	viewHolder.textViewRecordName = (TextView) rootView.findViewById(R.id.collection_object_textView_record_name);
 			viewHolder.textViewRecordTotal = (TextView) rootView.findViewById(R.id.collection_object_textView_record_total);
 			viewHolder.listViewRecentRecords = (ListView) rootView.findViewById(R.id.collection_object_listView_recent_records);
-//TODO			
-			
     		viewHolder.textViewRecordName.setText(recordName.replaceFirst("[a-zA-Z0-9]*_", ""));
     		viewHolder.textViewRecordTotal.setText(recordTotal.toString());
     		viewHolder.listViewRecentRecords.setAdapter(listItemsAdapter);
@@ -276,7 +273,6 @@ public class CollectionsActivity extends FragmentActivity implements OnClickList
         public void updateView() {
         	rootView = (View) hashMap.get(position);
         	viewHolder = (ViewHolder) rootView.getTag();
-//TODO
         	viewHolder.textViewRecordName.setText(recordName.replaceFirst("[a-zA-Z0-9]*_", ""));
     		viewHolder.textViewRecordTotal.setText(recordTotal.toString());
     		viewHolder.listViewRecentRecords.setAdapter(listItemsAdapter);

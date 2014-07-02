@@ -21,24 +21,18 @@ public final class R {
         public static final int activity_vertical_margin=0x7f040001;
     }
     public static final class drawable {
-        public static final int add=0x7f020000;
-        public static final int add_exp=0x7f020001;
-        public static final int add_tab=0x7f020002;
-        public static final int app_name=0x7f020003;
-        public static final int calender=0x7f020004;
-        public static final int drawer_shadow=0x7f020005;
-        public static final int history=0x7f020006;
-        public static final int ic_drawer=0x7f020007;
-        public static final int ic_launcher=0x7f020008;
-        public static final int schedule=0x7f020009;
+        public static final int app_name=0x7f020000;
+        public static final int drawer_shadow=0x7f020001;
+        public static final int history=0x7f020002;
+        public static final int homescreen_menuitem_add=0x7f020003;
+        public static final int homescreen_menuitem_add_expenses=0x7f020004;
+        public static final int homescreen_menuitem_add_tabs=0x7f020005;
+        public static final int homescreen_menuitem_calender=0x7f020006;
+        public static final int homescreen_menuitem_schedule_task=0x7f020007;
+        public static final int ic_drawer=0x7f020008;
+        public static final int ic_launcher=0x7f020009;
     }
     public static final class id {
-        public static final int Add=0x7f08001b;
-        public static final int Add_Exp=0x7f08001d;
-        public static final int Add_Tab=0x7f08001c;
-        public static final int Calender=0x7f08001f;
-        public static final int Schedule_Task=0x7f08001e;
-        public static final int action_settings=0x7f08001a;
         public static final int collection_button_add_record=0x7f080004;
         public static final int collection_button_reset_input=0x7f080005;
         public static final int collection_editText_amount=0x7f08000a;
@@ -61,6 +55,12 @@ public final class R {
         public static final int fragment_textView_total_label=0x7f080015;
         public static final int homescreen_listView_expenses_drawer=0x7f08000e;
         public static final int homescreen_listView_tabs_drawer=0x7f08000d;
+        public static final int homescreen_menuitem_add=0x7f08001b;
+        public static final int homescreen_menuitem_add_expenses=0x7f08001d;
+        public static final int homescreen_menuitem_add_tabs=0x7f08001c;
+        public static final int homescreen_menuitem_calender=0x7f08001f;
+        public static final int homescreen_menuitem_schedule_task=0x7f08001e;
+        public static final int homescreen_menuitem_settings=0x7f08001a;
         public static final int homescreen_viewPager=0x7f08000c;
         public static final int tableRow_list_item=0x7f080017;
         public static final int textView_list_item_amount=0x7f080019;
@@ -77,7 +77,6 @@ public final class R {
         public static final int menu_homescreen=0x7f070000;
     }
     public static final class string {
-        public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
         public static final int collection_button_add_record=0x7f05000e;
         public static final int collection_button_reset_input=0x7f05000f;
@@ -85,18 +84,19 @@ public final class R {
         public static final int collection_editText_note=0x7f050011;
         public static final int collection_textView_amount_label=0x7f050012;
         public static final int collection_textView_note_label=0x7f050010;
-        public static final int drawer_close=0x7f050004;
-        public static final int drawer_open=0x7f050003;
+        public static final int drawer_close=0x7f050003;
+        public static final int drawer_open=0x7f050002;
         public static final int fragment_textView_total_label=0x7f05000d;
-        public static final int hello_world=0x7f050002;
-        public static final int menu_add=0x7f050008;
-        public static final int menu_add_exp=0x7f05000a;
-        public static final int menu_add_tab=0x7f050009;
-        public static final int menu_calender=0x7f05000c;
-        public static final int menu_schedule=0x7f05000b;
-        public static final int my_green=0x7f050006;
-        public static final int my_grey=0x7f050007;
-        public static final int my_red=0x7f050005;
+        public static final int hello_world=0x7f050001;
+        public static final int homescreen_menuitem_add=0x7f050008;
+        public static final int homescreen_menuitem_add_expenses=0x7f05000a;
+        public static final int homescreen_menuitem_add_tabs=0x7f050009;
+        public static final int homescreen_menuitem_calender=0x7f05000c;
+        public static final int homescreen_menuitem_schedule_task=0x7f05000b;
+        public static final int homescreen_menuitem_settings=0x7f050007;
+        public static final int my_green=0x7f050005;
+        public static final int my_grey=0x7f050006;
+        public static final int my_red=0x7f050004;
     }
     public static final class style {
         /** 

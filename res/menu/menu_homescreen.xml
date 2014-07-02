@@ -1,44 +1,44 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
 
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/homescreen_menuitem_settings"
         android:orderInCategory="100"
-        android:showAsAction="never"
-        android:title="@string/action_settings" >
+        android:title="@string/homescreen_menuitem_settings"
+        android:showAsAction="never" >
     </item>
     
     <item 
-        android:id="@+id/Add"
-		android:icon="@drawable/add"
-		android:title="@string/menu_add"
+        android:id="@+id/homescreen_menuitem_add"
+		android:icon="@drawable/homescreen_menuitem_add"
+		android:title="@string/homescreen_menuitem_add"
 		android:showAsAction="always" >
         <menu>
             <item 
-                android:id="@+id/Add_Tab"
-				android:icon="@drawable/add_tab"
-				android:title="@string/menu_add_tab"
+                android:id="@+id/homescreen_menuitem_add_tabs"
+				android:icon="@drawable/homescreen_menuitem_add_tabs"
+				android:title="@string/homescreen_menuitem_add_tabs"
 				android:showAsAction="always" >
 			</item>
             <item 
-                android:id="@+id/Add_Exp"
-                android:icon="@drawable/add_exp"
-                android:title="@string/menu_add_exp"
+                android:id="@+id/homescreen_menuitem_add_expenses"
+                android:icon="@drawable/homescreen_menuitem_add_expenses"
+                android:title="@string/homescreen_menuitem_add_expenses"
                 android:showAsAction="always" >
             </item>
         </menu>
     </item>
     
     <item 
-        android:id="@+id/Schedule_Task"
-		android:icon="@drawable/schedule"
-		android:title="@string/menu_schedule"
+        android:id="@+id/homescreen_menuitem_schedule_task"
+		android:icon="@drawable/homescreen_menuitem_schedule_task"
+		android:title="@string/homescreen_menuitem_schedule_task"
 		android:showAsAction="always" >
 	</item>
 	
     <item 
-        android:id="@+id/Calender"
-		android:icon="@drawable/calender"
-		android:title="@string/menu_calender"
+        android:id="@+id/homescreen_menuitem_calender"
+		android:icon="@drawable/homescreen_menuitem_calender"
+		android:title="@string/homescreen_menuitem_calender"
 		android:showAsAction="always" >
 	</item>
 

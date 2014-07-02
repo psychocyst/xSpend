@@ -10,12 +10,12 @@
     <string name="my_green">#00CC00</string>
     <string name="my_grey">#0C0C0C</string>
     
-    <string name="action_settings">Settings</string>
-    <string name="menu_add">Add</string>
-    <string name="menu_add_tab">Add Tab</string>
-    <string name="menu_add_exp">Add Expense</string>
-    <string name="menu_schedule">Schedule Task</string>
-    <string name="menu_calender">Calender</string>
+    <string name="homescreen_menuitem_settings">Settings</string>
+    <string name="homescreen_menuitem_add">Add</string>
+    <string name="homescreen_menuitem_add_tabs">Add Tab</string>
+    <string name="homescreen_menuitem_add_expenses">Add Expense</string>
+    <string name="homescreen_menuitem_schedule_task">Schedule Task</string>
+    <string name="homescreen_menuitem_calender">Calender</string>
     
     <string name="fragment_textView_total_label">Total</string>
     <string name="collection_button_add_record">Add</string>
